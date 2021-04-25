@@ -12,8 +12,8 @@ class ServerSettings(BaseSettings):
 
 
 class DatabaseSettings(BaseSettings):
-    DB_URL: str
-    DB_NAME: str
+    DB_URL: str = "mongodb+srv://amit:amit@clustermumbai.56wzg.mongodb.net/To_Do_App?retryWrites=true&w=majority"
+    DB_NAME: str = "To_Do_App"
 
 
 class Settings(CommonSettings, ServerSettings, DatabaseSettings):
